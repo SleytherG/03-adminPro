@@ -6,6 +6,8 @@ import {ProgressComponent} from "./progress/progress.component";
 import {PagesComponent} from "./pages.component";
 import {SharedModule} from "../shared/shared.module";
 import {PagesRoutingModule} from "./pages-routing.module";
+import {ReactiveFormsModule} from "@angular/forms";
+import {ComponentsModule} from "../components/components.module";
 
 
 
@@ -25,7 +27,9 @@ import {PagesRoutingModule} from "./pages-routing.module";
   imports: [
     CommonModule,
     SharedModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ReactiveFormsModule,
+    ComponentsModule,
   ]
 })
 export class PagesModule { }
